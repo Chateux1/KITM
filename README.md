@@ -1,2 +1,4 @@
 # KITM-Java
-Individual assigments
+Individual assignments
+
+This is repository to store all the individual Java assignments.
