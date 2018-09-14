@@ -1,0 +1,2 @@
+# KITM-Java
+Individual assigments
