@@ -2,3 +2,5 @@ www.slides.com/martynas-kitm
 sublime text
 mdn
 nenaudoti w3school
+<div> vs <section>
+inline vs block elements
