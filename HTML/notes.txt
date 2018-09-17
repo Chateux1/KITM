@@ -4,3 +4,4 @@ mdn
 nenaudoti w3school
 <div> vs <section>
 inline vs block elements
+http://www.web-training.lt/uzduotys/prototipas.pdf
