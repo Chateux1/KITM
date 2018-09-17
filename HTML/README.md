@@ -1,2 +1,2 @@
-Ziniatinklio pagrindai
+Žiniatinklio pagrindai
 ======================
