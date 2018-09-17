@@ -1,0 +1,17 @@
+body {
+   background-image: url("image/background.png");
+   background-size: 2000px 1000px;
+   background-color: #cccccc;
+   color: white;
+}
+
+a {
+	color: red;
+}
+h1 {
+	color: red;
+}
+
+h2 {
+	color: red;
+}
