@@ -1,2 +1,2 @@
-Ziniatinklio puslapiu vartotojo sasajos programavimas
+Žiniatinklio puslapių vartotojo sąsajos programavimas
 =====================================================
