@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Šikšnosparnis</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+	</head>
+	<body>
+		<!-- section naudojame kai skiriasi duomenu tipas ???? -->
+		<section id="section-main">
+			<h1>Ar šikšnosparniai skraido dieną?</h1>
+		<section>
+			<h2>Jei taip, kur gi jie tada skraido?</h2>
+			<p>Sunku pasakyti, ar skraido šikšnosparniai dieną nes dienos metu skraido ir žvirbliai ir kitokie visokie maži šudukai.</p>
+		</section>
+
+		<!-- semantinis elementas <article> (html5 bajeris) -->
+		<article>
+			<p>Reikia stebėti dangų ir žiūrėti ar tai šikšnosparnis, ar balandis žinomas kaip dangaus žiurkė.</br>Pabandykime parašyti iš naujos eilutės.</br>Pabandykime dar kartą.</p>
+		</article>
+
+		<img src="image/baloon-green.jpg" width="200" height="200">
+
+		<article>
+			<h2>Kitas article elementas</h2>
+			<p>Čia yra paragrafinis tekstas</p>
+		</article>
+		
+		<nav>
+			<!-- <ul> - nenumeruojamas sarasas -->
+			<ul>
+				<!-- <li> - saraso elementas -->
+				<li>Apie
+					<!-- <ol> - numeruojamas sarasas -->
+					<ol>
+						<li>Spalva</li>
+						<li>Dantys</li>
+					</ol>
+				</li>
+				<li>Mityba</li>
+				<li>Pomėgiai</li>
+				<li>Pavojai</li>
+				<li>Žmogaus žala</li>
+			</ul>
+		</nav>
+
+		<!-- This is a section for hyperlink creation -->
+		<section>
+			<h2>Nuorodos</h2>
+			<!-- target="_blank" makes the link to open in a new tab -->
+			<a href="https://github.com/Chateux1/KITM-Java/tree/feature-html"
+			   target="_blank">GitHub repo</a><br>
+		    <a href="#gallery">Galerija</a>
+		</section>
+
+		<section id="gallery">
+			<h2>This is my gallery</h2>
+			<img src="image/baloon-red.jpg" width="200" height="200"><br>
+			<a href="#section-main">Į viršų</a>
+		</section>
+
+		<!-- This is a section for clickable image creation -->
+		<section>
+			<a href="http://caniuse.com/" target="_blank">
+				<img src="image/baloon-blue.jpg" width="200" height="200" >
+			</a>
+			
+		</section>
+
+		<!-- This is a section to create link for an email. You can add additional section that you want to edit by adding a '?' and the section name that you want to edit -->
+		<section>
+			<a href="mailto:m.satas@gmail.com?subject=Support request?body=This is a sample text">Email</a>
+		</section>
+
+		<!-- This is a section to create a basic table. Borders are done in css!!!! -->
+		<section>
+			<h2>Table</h2>
+			<table>
+				<!-- <tr> - table row -->
+				<tr>
+					<!-- <th> - table header, <td> - table data -->
+					<th>Vardas</th>
+					<th>Pavardė</th>
+					<th>el. paštas</th>
+				</tr>
+				<tr>
+					<td>Martynas</td>
+					<td>Shatas</td>
+					<td>martynas@shatas.lt</td>
+				</tr>
+
+			</table>
+		</section>
+
+	</body>
+</html>
