@@ -1,0 +1,15 @@
+Reikia sukurti mokytojams programą, kuri apibūdina moksleivio žinias pagal įvestus balus (sąlyga if).
+Tarkime vartotojas įveda 10, o programa išveda - puikios, išskirtinės žinios ir gebėjimai.
+Pridedama vertinimo sistema, pagal kurią reikia sukurti programą.
+Karmos taškai tiems, kurie po programos baigimo, paklausia vartotojo ar tęsti jos vykdymą ir vėl iš naujo paprašo įvesti balus? (ciklas while) Priešingu atveju baigiamas programos darbas.
+
+Ar išlaikyta	Vertinimo sistema				Apibūdinimas
+
+IŠLAIKYTA 		10 (puikiai) 					Puikios, išskirtinės žinios ir gebėjimai
+				9 (labai gerai) 				Tvirtos, geros žinios ir gebėjimai
+				8 (gerai) 						Geresnės nei vidutinės žinios ir gebėjimai
+				7 (vidutiniškai) 				Vidutinės žinios ir gebėjimai, yra neesminių klaidų
+				6 (patenkinamai) 				Žinios ir gebėjimai (įgūdžiai) žemesni nei vidutiniai, yra klaidų
+				5 (silpnai) 					Žinios ir gebėjimai (įgūdžiai) tenkina minimalius reikalavimus
+NEIŠLAIKYTA 	4, 3, 2, 1 (nepatenkinamai) 	Netenkinami minimalūs reikalavimai
+
