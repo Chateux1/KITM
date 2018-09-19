@@ -1,2 +1,2 @@
-Nesudetingos programines irangos kurimas
+Nesudėtingos programinės įrangos kūrimas
 ========================================
