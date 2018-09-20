@@ -40,7 +40,7 @@ public class Main {
             //System.out.println(input);
             input = input.replaceAll("\\s+", "");
 
-            int i = 0;
+            int i = 0, j = 0;
             for(i = 0; i < input.length(); i++) {
                 if (!isInteger(input.charAt(i))) {
                     break;
@@ -50,7 +50,7 @@ public class Main {
             input1Str = input.substring(0,i);
 
             if (isInteger(input.charAt(i+1))) {
-                for(int j = i; j < input.length(); j++) {
+                for(j = i; j < input.length(); j++) {
                     if (!isInteger(input.charAt(j))) {
                         break;
                     }
@@ -59,10 +59,11 @@ public class Main {
                 System.out.println("Klaidu klaida");
             }
 
+            input2Str = input.substring(i+1,j-1);
 
 
-            for (int j = 0; j < mathOperator.length; j++) {
-                char operator = input.charAt(i);
+            for (int k = 0; k < mathOperator.length; k++) {
+                char operator = input.charAt(k);
                 switch (operator) {
                     case '+':
                         indexOperator = 0;
@@ -86,6 +87,7 @@ public class Main {
             }
 
             System.out.println(input1Str);
+            System.out.println(input2Str);
         }
     }
 }
