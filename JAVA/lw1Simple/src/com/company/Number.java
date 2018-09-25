@@ -11,12 +11,6 @@ public class Number {
         this.value = 0;
     }
 
-    public void setNumber() {
-
-        this.mistake = false;
-        this.value = 0;
-    }
-
     public boolean isMistake() {
 
         return this.mistake;
