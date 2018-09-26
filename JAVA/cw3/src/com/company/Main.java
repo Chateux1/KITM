@@ -8,36 +8,46 @@ public class Main {
 
         Darbuotojas saulius = new Darbuotojas();
         Scanner ivedimas = new Scanner(System.in);
-        int bazinisAtlyginimas = 0;
-        int pagamintaDetaliu = 0;
+        boolean run = true, repeat = true;
 
         System.out.println("Si programa skaiciuoja moketina atlyginima pagal " +
                 "ivesta bazini atlyginima ir realiai pagamintu detaliu skaiciu");
 
         while (true) {
 
-            System.out.println("Iveskite pagamintu detaliu skaicius: ");
-            if (ivedimas.hasNextInt()) {
-                saulius.setPagamintaDetaliu(ivedimas.nextInt());
-                System.out.println("Ivedete detaliu skaiciu: " + saulius.getPagamintaDetaliu());
-            } else {
-                System.out.println("Klaida ivedant detaliu skaiciu");
+            while (repeat) {
+
+                System.out.println("Iveskite pagamintu detaliu skaicius: ");
+                if (ivedimas.hasNextInt()) {
+                    saulius.setPagamintaDetaliu(ivedimas.nextInt());
+                    System.out.println("Ivedete detaliu skaiciu: " + saulius.getPagamintaDetaliu());
+                } else {
+                    System.out.println("Klaida ivedant detaliu skaiciu");
+                    break;
+                }
+
+                System.out.println("Iveskite bazini atlyginimo dydi: ");
+                if (ivedimas.hasNextInt()) {
+                    saulius.setBazinisAtlyginimas(ivedimas.nextInt());
+                    System.out.println("Ivedete bazini atlyginima: " + saulius.getBazinisAtlyginimas());
+                } else {
+                    System.out.println("Klaida ivedant bazini atlyginima");
+                    break;
+                }
+
+                saulius.setMoketinasAtlyginimas();
+                System.out.println("Apskaiciuotas atlyginimas: " + saulius.getPagamintaDetaliu() + " * " +
+                        saulius.getAtlyginimoKoeficientas() + " = " +
+                        saulius.getMoketinasAtlyginimas());
                 break;
             }
 
-            System.out.println("Iveskite bazini atlyginimo dydi: ");
-            if (ivedimas.hasNextInt()) {
-                saulius.setBazinisAtlyginimas(ivedimas.nextInt());
-                System.out.println("Ivedete bazini atlyginima: " + saulius.getBazinisAtlyginimas());
-            } else {
-                System.out.println("Klaida ivedant bazini atlyginima");
-                break;
-            }
+            System.out.println("Bandyti dar karta (y/n)? :");
+                if (ivedimas.nextLine().equals("y")) repeat = true;
+                else if (ivedimas.nextLine().equals("n")) break;
+                else repeat = false;
 
-            saulius.setMoketinasAtlyginimas();
-            System.out.println("Apskaiciuotas atlyginimas: " + saulius.getPagamintaDetaliu() + " * " +
-                                saulius.getAtlyginimoKoeficientas() + " = " +
-                                saulius.getMoketinasAtlyginimas());
+
 
         }
 
