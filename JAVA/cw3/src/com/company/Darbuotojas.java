@@ -2,21 +2,63 @@ package com.company;
 
 public class Darbuotojas {
 
-    private static int bazineNorma = 2000;
+    private int bazineNorma;
     private int bazinisAtlyginimas;
     private int pagamintaDetaliu;
     private double moketinasAtlyginimas;
+    private double atlyginimoKoeficientas;
 
-    public void setMoketinasAtlyginimas(int pagamintaDetaliu, int bazinisAtlyginimas) {
+    Darbuotojas() {
+        this.bazineNorma = 2000;
+    }
 
-        double atlyginimoKoeficientas = 0;
+    public void setBazineNorma(int bazineNorma) {
+        this.bazineNorma = bazineNorma;
+    }
 
-        if (pagamintaDetaliu < 2000) atlyginimoKoeficientas = 0.5;
-        else if (2000 < pagamintaDetaliu && pagamintaDetaliu < 2500 ) atlyginimoKoeficientas = 1.0;
-        else if (pagamintaDetaliu >= 2500) atlyginimoKoeficientas = 1.5;
-        else atlyginimoKoeficientas = 1.5;
+    public int getBazineNorma() {
+        return this.bazineNorma;
+    }
 
-        this.moketinasAtlyginimas = bazinisAtlyginimas * atlyginimoKoeficientas;
+    public int getBazinisAtlyginimas() {
+        return this.bazinisAtlyginimas;
+    }
+
+    public void setBazinisAtlyginimas(int bazinisAtlyginimas) {
+        this.bazinisAtlyginimas = bazinisAtlyginimas;
+    }
+
+    public int getPagamintaDetaliu() {
+        return this.pagamintaDetaliu;
+    }
+
+    public void setPagamintaDetaliu(int pagamintaDetaliu) {
+        this.pagamintaDetaliu = pagamintaDetaliu;
+    }
+
+    public double getAtlyginimoKoeficientas() {
+        return this.atlyginimoKoeficientas;
+    }
+
+    public void setAtlyginimoKoeficientas(double atlyginimoKoeficientas) {
+        this.atlyginimoKoeficientas = atlyginimoKoeficientas;
+    }
+
+    public void setMoketinasAtlyginimas() {
+
+        int detales = this.getPagamintaDetaliu();
+        int norma = this.getBazineNorma();
+
+        if (detales < norma) {
+            this.setAtlyginimoKoeficientas(0.5);
+        }
+        else if (norma <= detales && detales < norma + 500 ) {
+            this.setAtlyginimoKoeficientas(1.0);
+        }
+        else if (detales >= norma + 500) {
+            this.setAtlyginimoKoeficientas(1.5);
+        }
+        this.moketinasAtlyginimas = this.getPagamintaDetaliu() * this.getAtlyginimoKoeficientas();
     }
 
     public double getMoketinasAtlyginimas() {
