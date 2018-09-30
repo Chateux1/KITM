@@ -23,7 +23,7 @@ Chapter 8 - Pipes, Redirection, and REGEX
 -----------------------------------------
 
 1. less (more)
-   + h = help
+   - h = help
 -- q = quit
 -- b = window backwards
 -- space = window forward
