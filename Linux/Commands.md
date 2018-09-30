@@ -22,8 +22,8 @@ Chapter 6 - Working with Files and Directories
 Chapter 8 - Pipes, Redirection, and REGEX
 -----------------------------------------
 
-+ less (more)
-  + h = help
+1. less (more)
+   + h = help
 -- q = quit
 -- b = window backwards
 -- space = window forward
