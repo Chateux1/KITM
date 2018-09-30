@@ -19,6 +19,19 @@ Chapter 6 - Working with Files and Directories
 - rmdir (remove empty directory)
 - touch (create new file)
 
+Chapter 8 - Pipes, Redirection, and REGEX
+-----------------------------------------
+
+- less (more)
+-- h = help
+-- q = quit
+-- b = window backwards
+-- space = window forward
+-- enter = line forward
+
+
+
+
 **File type explanation:**
 
 - d 	directory 	A file used to store other files.
