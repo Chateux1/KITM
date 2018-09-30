@@ -22,15 +22,16 @@ Chapter 6 - Working with Files and Directories
 Chapter 8 - Pipes, Redirection, and REGEX
 -----------------------------------------
 
-* less (more)
-** h = help
++ less (more)
+  + h = help
 -- q = quit
 -- b = window backwards
 -- space = window forward
 -- enter = line forward
 
 - search in less command
--- 
+- [x] asd
+- [] dsgh
 
 
 
