@@ -37,6 +37,12 @@ Chapter 8 - Pipes, Redirection, and REGEX
 	
 * head/tail advanced
 
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
 | Command				| Description											|
 |-----------------------|-------------------------------------------------------|
 | head /etc/passwd      | First ten lines of /etc/passwd                        |
