@@ -1,3 +1,5 @@
+[TOC]
+
 Various commands
 ================
 
@@ -42,6 +44,8 @@ Chapter 8 - Pipes, Redirection, and REGEX
 | head /etc/passwd      | First ten lines of /etc/passwd                        |
 | head -3 /etc/group    | First three lines of /etc/group                       |
 | head -n 3 /etc/group  | First three lines of /etc/group                       |
+| help &#124; head     | First ten lines of output piped from the help command |
+| help \* | \* head     | First ten lines of output piped from the help command |
 | help `` | `` head     | First ten lines of output piped from the help command |
 | help \| head          | First ten lines of output piped from the help command |
 | tail /etc/group       | Last ten lines of /etc/group                          |
@@ -50,7 +54,7 @@ Chapter 8 - Pipes, Redirection, and REGEX
 | help \| tail          | Last ten lines of output piped from the help command  |
 
 
-
+!-4
 
 **File type explanation:**
 
