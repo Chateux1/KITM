@@ -36,14 +36,17 @@ Chapter 8 - Pipes, Redirection, and REGEX
 	* N = previous search
 	
 * head/tail advanced
-	* head /etc/passwd 			First ten lines of /etc/passwd
-	* head -3 /etc/group 		First three lines of /etc/group
-	* head -n 3 /etc/group 		First three lines of /etc/group
-	* help | head 				First ten lines of output piped from the help command
-	* tail /etc/group 			Last ten lines of /etc/group
-	* tail -5 /etc/passwd 		Last five lines of /etc/passwd
-	* tail -n 5 /etc/passwd 	Last five lines of /etc/passwd
-	* help | tail 				Last ten lines of output piped from the help command
+
+| Command				| Description											|
+|-----------------------|-------------------------------------------------------|
+| head /etc/passwd      | First ten lines of /etc/passwd                        |
+| head -3 /etc/group    | First three lines of /etc/group                       |
+| head -n 3 /etc/group  | First three lines of /etc/group                       |
+| help | head           | First ten lines of output piped from the help command |
+| tail /etc/group       | Last ten lines of /etc/group                          |
+| tail -5 /etc/passwd   | Last five lines of /etc/passwd                        |
+| tail -n 5 /etc/passwd | Last five lines of /etc/passwd                        |
+| help | tail           | Last ten lines of output piped from the help command  |
 
 
 
