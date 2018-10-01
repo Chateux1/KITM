@@ -35,13 +35,7 @@ Chapter 8 - Pipes, Redirection, and REGEX
 	* n = next search
 	* N = previous search
 	
-* head/tail advanced
-
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
+### Examples of head/tail usage
 
 | Command				| Description											|
 |-----------------------|-------------------------------------------------------|
@@ -53,7 +47,6 @@ Chapter 8 - Pipes, Redirection, and REGEX
 | tail -5 /etc/passwd   | Last five lines of /etc/passwd                        |
 | tail -n 5 /etc/passwd | Last five lines of /etc/passwd                        |
 | help | tail           | Last ten lines of output piped from the help command  |
-
 
 
 
