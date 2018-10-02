@@ -2,6 +2,7 @@ WEB vartotojo sąsajos prototipas HTML5
 ======================================
 
 **Užduotis: http://www.web-training.lt/uzduotys/prototipas.pdf**
+			http://www.web-training.lt/uzduotys/dizainas.psd
 
 Sveiki,
 

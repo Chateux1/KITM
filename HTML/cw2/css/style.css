@@ -1,0 +1,45 @@
+p {
+	color: red;
+}
+
+h2 {
+	background-color: pink;
+}
+
+article {
+	background-color: red;
+	color: silver;
+}
+
+section {
+	background-color: green;
+	color: blue;
+}
+
+#section-main {
+	background-color: yellow;
+	color:green;
+}
+
+.section-second {
+	text-align: center;
+	color: #fff;
+}
+
+a[href] {
+	color: purple;
+}
+
+a[href="http://www.google.com"] {
+	font-weight: bold;
+	color: orange
+}
+
+a[href="http://www.delfi.lt"] {
+	font-weight: bold;
+	color: red
+}
+
+heading {
+	color: lightblue;
+}
