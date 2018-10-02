@@ -31,13 +31,19 @@ a[href] {
 }
 
 a[href="http://www.google.com"] {
-	font-weight: bold;
 	color: orange
 }
 
 a[href="http://www.delfi.lt"] {
-	font-weight: bold;
 	color: red
+}
+
+a[href^="http://"] {
+	font-weight: bold;
+}
+
+a[href$=".pdf"] {
+	font-weight: italic;
 }
 
 heading {
