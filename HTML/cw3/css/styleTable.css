@@ -1,12 +1,46 @@
+body {
+	background-color: orange;
+}
 table {
 	border-collapse: collapse;
 	width: 100%;
 }
+th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid black;
+}
 th {
+	background-color: yellow;
+	color: green;
+	font-weight: bold;
+	text-align: left;
+}
+tr:nth-child(2n+2) {
+	font-weight: bold;
+	background-color: tomato;
+}
+tr td:hover{
 	background-color: red;
-	color: black;
+	color:blue;
+}
+tr:hover {
+	background-color:lightblue;
+}
+li>a {
+	background-color: red;
+	color:black;
 	font-weight: bold;
 }
+li>ul>li>a {
+	background-color: tomato;
+}
+li a:hover {
+	background-color: yellow;
+	font-size: 20px;
+	text-decoration: none;
+}
+/*
 tr:nth-child(even) {
 	background-color: yellow
 }
@@ -18,8 +52,4 @@ tr:nth-child(3n+2) {
 	font-size: 30px;
 	color: green;
 }
-th, td {
-	text-align: left;
-	padding: 8px;
-	border: 1px solid black;
-}
+*/
