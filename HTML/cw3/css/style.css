@@ -1,0 +1,55 @@
+p {
+	color: red;
+}
+article {
+	background-color: orange;
+}
+article h2{
+	color: red;
+	font-weight: bold;
+}
+article p {
+	color: blue;
+	font-style: italic;
+}
+article a {
+	color:black;
+	font-weight: bold;
+}
+.article-second {
+	background-color: tomato;
+}
+.article-last {
+	background-color: darkred;
+}
+footer p {
+	text-align: center;
+}
+ul {
+	list-style: none;
+	text-align: center
+}
+li {
+	display: inline;
+}
+section {
+	color: green;
+	background-color: lightgreen;
+}
+aside {
+	background-color: yellow;
+}
+nav {
+	background-color: blue;
+}
+nav li {
+	background-color: lightblue;
+	color: black;
+}
+aside a {
+	color: white;
+	background-color: green;
+}
+body {
+	background-color: pink;
+}
