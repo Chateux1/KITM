@@ -1,0 +1,25 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	background-color: red;
+	color: black;
+	font-weight: bold;
+}
+tr:nth-child(even) {
+	background-color: yellow
+}
+tr:nth-child(odd) {
+	background-color: tomato
+}
+tr:nth-child(3n+2) {
+	font-weight: bold;
+	font-size: 30px;
+	color: green;
+}
+th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid black;
+}
