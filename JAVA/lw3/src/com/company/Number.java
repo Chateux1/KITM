@@ -16,10 +16,9 @@ public class Number {
         this.evenSum = 0;
         this.setParameters();
         this.swapMinMax();
-
     }
     public void returnParameters() {
-        System.out.println("");
+        System.out.println();
         System.out.print("Sum of even array numbers  :    ");
         System.out.print(this.getEvenSum());
         System.out.print("    (Array of even values: ");
@@ -41,7 +40,7 @@ public class Number {
         return sum / this.getEvenCount();
     }
     public void returnArrays() {
-        System.out.println("");
+        System.out.println();
         System.out.print("Original array: ");
         System.out.println(Arrays.toString(this.getOriginalArray()));
         System.out.print("Modified array: ");
@@ -64,7 +63,7 @@ public class Number {
         this.setEvenCount();
     }
     private void setEvenSum() {
-        this.evenValues = new ArrayList<Integer>();
+        this.evenValues = new ArrayList<>();
         for (int i = 0; i < this.getModifiedArray().length; i++) {
             if (this.getModifiedArray()[i] % 2 == 0) {
                 this.evenSum += this.getModifiedArray()[i];
