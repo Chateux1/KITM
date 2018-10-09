@@ -16,6 +16,7 @@ public class Number {
         this.evenSum = 0;
         this.setParameters();
         this.swapMinMax();
+        this.getMaxOdd();
     }
     public void returnParameters() {
         System.out.println();
@@ -34,7 +35,6 @@ public class Number {
     private int getEvenCount() {
         return this.evenCount;
     }
-
     private double returnEvenAverage() {
         double sum = this.getEvenSum();
         return sum / this.getEvenCount();
@@ -102,5 +102,15 @@ public class Number {
                 this.maxIndex = i;
             }
         }
+    }
+    public void getMaxOdd(){
+        int maxOdd = 0;
+        for (int i = 0; i < this.getOriginalArray().length; i++) {
+            if (this.getOriginalArray()[i] > maxOdd && this.getOriginalArray()[i] % 2 != 0) {
+                maxOdd = this.getOriginalArray()[i];
+            }
+        }
+        System.out.println();
+        System.out.println("Highest even integer is: " + maxOdd);
     }
 }
