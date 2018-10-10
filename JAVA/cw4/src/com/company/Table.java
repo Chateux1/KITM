@@ -2,8 +2,8 @@ package com.company;
 
 public class Table {
 
+    private static final String[] antrastes = {"Vardas", "Pavardė", "ID", "Grupė"};
     private int[] widths;
-    private static final String[] antrastes = {"Vardas", "Pavarde", "ID", "Grupe"};
     private int tableWidth;
 
     public Table(Studentas... args) {
@@ -17,34 +17,40 @@ public class Table {
         this.printData(args);
         this.printLine(this.getTableWidth());
     }
+
     public int getTableWidth() {
         return this.tableWidth;
     }
+
     public void setTableWidth() {
         this.tableWidth = 0;
         for (int i = 0; i < this.getWidths().length; i++) {
             this.tableWidth += this.getWidths()[i] + 2;
-
         }
         this.tableWidth += this.getWidths().length + 1;
     }
+
     public void printLine(int count) {
         System.out.println("");
         for (int i = 0; i < count; i++) {
             System.out.print("-");
         }
     }
+
     public void setWidths(int index, int value) {
         this.widths[index] = value;
     }
+
     public int[] getWidths () {
         return this.widths;
     }
+
     public void calculateHeaderWidth(String[] antrastes) {
         for (int i = 0; i < antrastes.length; i++) {
             this.setWidths(i, antrastes[i].length());
         }
     }
+
     public void calculateWidths(Studentas... args) {
         for (int i = 0; i < args.length; i++) {
             for (int j = 0; j < args[i].getInfo().length; j++)
@@ -53,6 +59,7 @@ public class Table {
                 }
         }
     }
+
     public void printHeaders() {
         System.out.println("");
         for (int i = 0; i < antrastes.length; i++) {
@@ -64,6 +71,7 @@ public class Table {
         System.out.print("|");
 
     }
+
     public void printData(Studentas... args) {
         for (int i = 0; i < args.length; i++) {
             System.out.println("");
