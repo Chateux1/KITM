@@ -1,0 +1,29 @@
+body {
+	background-color: lightgreen;
+}
+article {
+	padding: 10px;
+	margin: 10px;
+	background-color: forestgreen;
+}
+img {
+	height: 150px;
+	width: auto;
+}
+a:link {
+	color: darkblue;
+}
+a:visited {
+	color: darkgreen;
+}
+a:focus {
+	color: #123456;
+}
+a:hover {
+	color: #789456;
+}
+a:active {
+	color: #456985;
+}
+
+
