@@ -13,10 +13,15 @@ img {
 h1 {
 	font-size: 2.5em;
 	font-weight: bold;
-	font-style: italic;
 }
 h2 {
 	font-size: 2em;
+}
+p {
+	font-size: 1.2em;
+}
+a {
+	display: block;
 }
 a:link {
 	color: darkblue;
