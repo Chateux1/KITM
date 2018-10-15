@@ -1,5 +1,7 @@
 body {
 	background-color: lightgreen;
+	font-family: 'Mali', cursive, sans-serif;
+
 }
 article {
 	padding: 10px;
@@ -13,21 +15,29 @@ img {
 h1 {
 	font-size: 2.5em;
 	font-weight: bold;
+	
+	/* font-family: Calibri, Arial, Tahoma; */
+	/* font-family: sans-serif; - web safe font, last resort */
+	/* https://fonts.google.com; */
 }
 h2 {
 	font-size: 2em;
+	font-family: 'Charmonman', cursive;
 }
 p {
 	font-size: 1.2em;
+	font-family: 'Pacifico', cursive;
 }
 a {
 	display: block;
+	font-family: 'Dancing Script', cursive;
 }
 a:link {
 	color: darkblue;
+	font-weight: bold;
 }
 a:visited {
-	color: darkgreen;
+	color: darkblue;
 }
 a:focus {
 	color: #123456;
