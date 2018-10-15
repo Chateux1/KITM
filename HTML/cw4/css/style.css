@@ -4,6 +4,7 @@ body {
 	background: rgb(13, 68, 8, 0.9) 
 				url("../images/background.jpg")
 				no-repeat;
+				/* no-repeat; */
 				/* repeat-y; -- repeat image on y axis */
 	background-size: cover; /* limit image size */
 	/* background-size: contain; -- size from parent */
