@@ -19,10 +19,13 @@ h1 {
 	/* font-family: Calibri, Arial, Tahoma; */
 	/* font-family: sans-serif; - web safe font, last resort */
 	/* https://fonts.google.com; */
+	/* https://fontawesome.com/ */
 }
 h2 {
 	font-size: 2em;
 	font-family: 'Charmonman', cursive;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
 }
 p {
 	font-size: 1.2em;
