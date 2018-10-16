@@ -1,11 +1,11 @@
-1. Sukurkite naujus Linux OS vartotojus vardu moksleivis ir mokytojas. Suteikite jiems namų
+# 1. Sukurkite naujus Linux OS vartotojus vardu moksleivis ir mokytojas. Suteikite jiems namų
 katalogus vardu moksleivis, mokytojas
 2. Sukurkite grupe mok. Priskirkite pagrindinę namų grupę mok ir papildomas grupes
 lp,kospusas1,korpusas2 vartotojams, bei nustatykite vartotojų shell apvalkalą bash. Suteikite
 vartotojams slaptažodį kitm.
 3. Sukurtus vartotojus priskirkite prie papildomų grupių sudo ir mokykla. Patikrinkite kokioms
 grupės priklauso sukurtas vartotojas moksleivis.
-==============================================================================================
+================================================
 
 	* sudo groupadd mok (mokykla, lp, kp1)
 	* sudo useradd -g mok -G lp, kp1, kp2, sudo, mokykla, -s /bin/bash user_name
