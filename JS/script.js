@@ -11,3 +11,52 @@ console.log((x * 10 + y * 10) / 10);
 
 y = '3';
 console.log(x + parseInt(y));
+
+console.log(pakeltiKvadratu(2))
+
+function pakeltiKvadratu(x) {
+	return x * x;
+}
+
+let myFunction = (x, y) => {
+	return x + y;
+};
+
+console.log(myFunction(5, 8));
+
+(function() {
+	alert();
+})();
+
+function test(x) {
+	if (x === 10) {
+		return;
+	}
+	console.log(x);
+	x++;
+	test(x);
+};
+
+test(1);
+
+function arRytas() {
+	
+	//let laikas = window.prompt("koks laikas");
+	let sistemosLaikas = new Date().getHours();
+
+	if (sistemosLaikas < 12) {
+		alert("Labas rytas");
+	}
+	else if (sistemosLaikas >= 12 && sistemosLaikas < 18) {
+		alert("Laba diena");
+	}
+	else if (sistemosLaikas <= 24) {
+		alert("Labas vakaras");
+	}
+	else {
+		alert("Klaida: negalimas valandų skaičius");
+	}
+
+}
+
+arRytas();
