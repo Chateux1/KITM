@@ -25,7 +25,7 @@ let myFunction = (x, y) => {
 console.log(myFunction(5, 8));
 
 (function() {
-	alert();
+	//alert();
 })();
 
 function test(x) {
@@ -56,7 +56,28 @@ function arRytas() {
 	else {
 		alert("Klaida: negalimas valandų skaičius");
 	}
-
 }
 
-arRytas();
+//arRytas();
+
+function rodyti() {
+	document.getElementById("heading1").style.color = "red";
+	document.getElementById("heading1").style.fontSize = "200px";
+}
+
+rodyti();
+
+var myVar = setInterval(setColor, 400);
+
+function setColor() {
+    var x = document.body;
+    x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "red" : "yellow";
+}
+
+function stopColor() {
+    clearInterval(myVar);
+}
+
+setColor();
+
+
