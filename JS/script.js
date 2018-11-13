@@ -67,17 +67,17 @@ function rodyti() {
 
 rodyti();
 
-// var myVar = setInterval(setColor, 400);
+var myVar = setInterval(setColor, 33);
 
-// function setColor() {
-//     var x = document.body;
-//     x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "red" : "yellow";
-// }
+function setColor() {
+    var x = document.body;
+    x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "red" : "yellow";
+}
 
-// function stopColor() {
-//     clearInterval(myVar);
-// }
+function stopColor() {
+    clearInterval(myVar);
+}
 
-//setColor();
+setColor();
 
 
