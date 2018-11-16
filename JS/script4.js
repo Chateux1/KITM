@@ -42,35 +42,3 @@ setInterval( function() {
 //     var currentDiv = document.getElementById('div1');
 //     document.body.insertBefore(newDiv, currentDiv);
 // }
-
-function changeTextColor( id, color1, color2 , delay) {
-    var element = document.getElementById( id );
-    element.style.color = color1;
-    var innerFunction = setInterval( function() {
-        if ( element.style.color == color1 ) {
-            element.style.color = color2 ;
-        } else {
-            element.style.color = color1;
-        }
-    }, delay);
-}
-
-changeTextColor( 'myParagraph', 'red', 'blue', 200);
-changeTextColor( 'myHeading', 'green', 'yellow', 100);
-changeTextColor( 'mySubheading1', 'blue', 'purple', 1000);
-changeTextColor( 'mySubheading2', 'black', 'brown', 50);
-
-
-
-let colors = ['red','blue','green'];
-let target = document.getElementById('div1');
-
-let i = 0;
-let myBtn = document
-    .getElementById('meClick')
-    .addEventListener('click', function() {
-        if ( i > colors.length - 1 ) {
-            i = 0;
-        }
-        target.style.backgroundColor = colors[i++];
-    });
