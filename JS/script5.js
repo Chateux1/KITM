@@ -19,7 +19,7 @@ function changeBackgroundColor( id, colours, delay ) {
 
 function getRandom() {
     let lowerDelay = 20;
-    let upperDelay = 50;
+    let upperDelay = 40;
     return Math.floor(Math.random() * upperDelay ) + lowerDelay;
 }
 
