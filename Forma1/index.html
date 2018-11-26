@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forma Nr.1</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<form method="post">
+        <h1>Registruotis</h1>
+        <hr>
+        <section>
+            <h2>Duomenų informacija</h2>
+            <p>
+              <label for="email">
+                <span>El. pašto adresas: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="email" id="email" name="email">
+            </p>
+            <p>
+              <label for="psw">
+                <span>Slaptažodis: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="password" id="psw" name="password">
+            </p>
+            <p>
+              <label for="psw-repeat">
+                <span>Patvirtinti slaptažodį: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="password" id="psw-repeat" name="password">
+            </p>
+        </section>
+        <section>
+            <h2>Pasitikrinkite sąskaitos adresą</h2>
+            <p>
+              <label for="sex">
+                <span>Lytis:</span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <select id="sex" name="sex">
+                <option value="visa">Moteris</option>
+                <option value="mc">Vyras</option>
+              </select>
+            </p>
+            <p>
+              <label for="number">
+                <span>Card number:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+                <input type="number" id="number" name="cardnumber">
+            </p>
+            <p>
+              <label for="name">
+                <span>Vardas: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="name">
+            </p>
+            <p>
+              <label for="surname">
+                <span>Pavardė: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="text" id="surname" name="surname">
+            </p>
+            <p>
+              <label for="street">
+                <span>Gatvė, namo(buto) nr.: </span>
+                <strong><abbr title="Privaloma užpildyti">*</abbr></strong>
+              </label>
+              <input type="text" id="street" name="street">
+            </p>
+            <p>Prašome užpildyti visus pažymėtus laukus<strong><abbr title="Privaloma užpildyti">*</abbr></strong></p>
+        </section>
+        <section>
+            <p> <button type="submit">Registruotis</button> </p>
+        </section>
+	</form>
+</body>
+</html>
