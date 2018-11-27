@@ -23,20 +23,26 @@ function myGetFunction() {
     });
 };
 
-function myPostFunction() {
+$('#button').on('click', function() {
+    let inputName = $('#username').val();
+    let inputPassword = $('#psw').val();
+    
     $.post({
         url: apiUrlOnlyPost,
         contentType: 'application/json',
         data: JSON.stringify(
-            {   username: 'admin',
-                password: 'Password'
+            {   username: inputName,
+                password: inputPassword
             }),
         success: function(response) {
-            console.log(response);
+            if ( response.isSuccessStatusCode == true ) {
+                alert('Login succesful');
+            } else if ( response.isSuccessStatusCode == false ) {
+                alert('Problemyte!!!')
+            }
         }
-    });
-};
+    })
+});
 
 myGetFunction();
-myPostFunction();
 
