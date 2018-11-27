@@ -11,8 +11,15 @@ function myGetFunction() {
         success: function(response) {
             responseData = JSON.parse(response);
             
-            myParagraph.text(responseData[0].name);
-            //console.log(responseData[0]);
+            // myParagraph.text(responseData[0].name);
+            // console.log();
+            $('#myTable tr + tr').remove();
+            responseData.forEach(element => {
+                if (element.isActive ) {
+                    $('#myTable tr:last').after('<tr><td>' + element.name + '</td><td>' + element.email + '</td></tr>');
+                }
+            });
+            
         },
         error: function() {
             alert('Fail!');
@@ -36,13 +43,18 @@ $('#button').on('click', function() {
             }),
         success: function(response) {
             if ( response.isSuccessStatusCode == true ) {
-                alert('Login succesful');
+                // alert('Login succesful');
+                myGetFunction();
+                
             } else if ( response.isSuccessStatusCode == false ) {
                 alert('Problemyte!!!')
             }
+        },
+        complete: function(res) {
+            console.log(res);
         }
     })
 });
 
-myGetFunction();
+// myGetFunction();
 

@@ -17,3 +17,11 @@ label span{
 	display: inline-block;
 	width: 100px;
 }
+table {
+	border: black solid 1px;
+	width: 500px;
+}
+
+table th, td {
+	border: black solid 1px;
+}
