@@ -24,13 +24,19 @@ function myGetFunction() {
 };
 
 function myPostFunction() {
-    $.ajax({
+    $.post({
         url: apiUrlOnlyPost,
-        type: 'POST',
-        crossDomain: true,
+        contentType: 'application/json',
+        data: JSON.stringify(
+            {   username: 'admin',
+                password: 'Password'
+            }),
+        success: function(response) {
+            console.log(response);
+        }
     });
 };
 
 myGetFunction();
-
+myPostFunction();
 
