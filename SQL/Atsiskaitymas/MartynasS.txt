@@ -1,0 +1,9 @@
+SELECT COUNT(pavadinimas) AS knygu_skaicius FROM knygos;
+
+SELECT pavadinimas FROM knygos WHERE leidimas = 1 ORDER BY isleidimo_metai DESC;
+
+SELECT * FROM knygos WHERE isleidimo_metai < 2010;
+
+SELECT leidimas, COUNT(leidimas) AS knygu_skaicius FROM knygos GROUP BY leidimas;
+
+SELECT pavadinimas FROM knygos ORDER BY COUNT(pavadinimas) DESC;
