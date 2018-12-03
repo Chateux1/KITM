@@ -16,7 +16,7 @@
 - sukurti lentelę (<table>)
   - istraukti duomenis is http://kitmjavascript.azurewebsites.net/api/studentai
   - ideti i lentele tik aktyvius studentus.
-  - Lenteles lauku antrastes (<TH>):
+  - Lenteles lauku antrastes (\<TH\>):
   - name, age, picture, balance, tags, registered, favoriteFruit.
   - Prideti po 1000 \$ kiekvienam studentui prie jo balanso.
   - Sunumeruoti eilutes
@@ -30,3 +30,5 @@
 - Viska suarchivuoti i zip failą.
 - Galima pagražint su CSS, bet nebūtina.
 - Ir atsiust i aurimas.bajorunas@festo.com iki 2018/12/07 dienos.
+
+nnoreikaite@yahoo.com
