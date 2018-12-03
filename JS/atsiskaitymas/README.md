@@ -30,5 +30,3 @@
 - Viska suarchivuoti i zip failą.
 - Galima pagražint su CSS, bet nebūtina.
 - Ir atsiust i aurimas.bajorunas@festo.com iki 2018/12/07 dienos.
-
-nnoreikaite@yahoo.com
