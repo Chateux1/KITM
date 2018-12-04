@@ -18,6 +18,7 @@ $(".input-button > button").on("click", function() {
     success: function(response) {
       if (response.isSuccessStatusCode == true) {
         input.style.display = "none";
+        myGetFunction();
         // alert("Success!!!");
       } else if (response.isSuccessStatusCode == false) {
         alert("Error :(");
@@ -25,6 +26,42 @@ $(".input-button > button").on("click", function() {
     }
   });
 });
+
+function myGetFunction() {
+  $.ajax({
+    url: urlGet,
+    type: "GET",
+    crossDomain: true,
+    success: function(response) {
+      responseData = JSON.parse(response);
+      setEmptyTable();
+      $(".table tr + tr").remove();
+      responseData.forEach(element => {
+        if (element.isActive) {
+          $(".table tr:last").after(
+            "<tr><td>" +
+              element.name +
+              "</td><td>" +
+              element.age +
+              "</td><td>" +
+              "</td><td class='picture'>" +
+              element.balance +
+              "</td><td>" +
+              element.tags +
+              "</td><td>" +
+              element.registered +
+              "</td><td>" +
+              element.favoriteFruit +
+              "</td></tr>"
+          );
+        }
+      });
+    },
+    error: function() {
+      alert("Fail!");
+    }
+  });
+}
 
 function setHeaderRow() {
   let headerLabels = [
@@ -46,10 +83,6 @@ function setHeaderRow() {
 function setEmptyTable() {
   let table = "<table class='table'></table>";
   let headers = setHeaderRow();
-  //   alert(headers);
-
   $(".output").append(table);
   $(".table").append(headers);
 }
-
-setEmptyTable();
