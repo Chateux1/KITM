@@ -19,7 +19,6 @@ $(".input-button > button").on("click", function() {
       if (response.isSuccessStatusCode == true) {
         input.style.display = "none";
         myGetFunction();
-        // alert("Success!!!");
       } else if (response.isSuccessStatusCode == false) {
         alert("Error :(");
       }
@@ -43,8 +42,8 @@ function myGetFunction() {
               element.name +
               "</td><td>" +
               element.age +
-              "</td><td>" +
               "</td><td class='picture'>" +
+              "</td><td>" +
               element.balance +
               "</td><td>" +
               element.tags +
@@ -56,6 +55,7 @@ function myGetFunction() {
           );
         }
       });
+      setNewBalance();
     },
     error: function() {
       alert("Fail!");
@@ -85,4 +85,14 @@ function setEmptyTable() {
   let headers = setHeaderRow();
   $(".output").append(table);
   $(".table").append(headers);
+}
+
+function setNewBalance() {
+  var table = document.getElementsByClassName("table")[0];
+  for (var i = 1, row; (row = table.rows[i]); i++) {
+    let balanceString = row.cells[3].innerHTML;
+    let balanceValue = balanceString.toString().replace(/[$,]+/g, "");
+    let sumToAdd = 100;
+    row.cells[3].innerHTML = JSON.parse(balanceValue) + sumToAdd;
+  }
 }
