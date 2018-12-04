@@ -56,6 +56,7 @@ function myGetFunction() {
         }
       });
       setNewBalance();
+      addNumeration();
     },
     error: function() {
       alert("Fail!");
@@ -95,4 +96,21 @@ function setNewBalance() {
     let sumToAdd = 100;
     row.cells[3].innerHTML = JSON.parse(balanceValue) + sumToAdd;
   }
+}
+
+function addNumeration() {
+  var table = document.getElementsByClassName("table")[0];
+  for (var i = 0, row; (row = table.rows[i]); i++) {
+    if (i == 0) {
+      const numerationHeader = document.createElement("th");
+      numerationHeader.innerText = "eiles nr.";
+      table.rows[0].cells[0].before(numerationHeader);
+    } else {
+      const number = document.createElement("td");
+      number.innerText = i;
+      row.cells[0].before(number);
+    }
+  }
+
+  //   console.log(table.rows[0].cells[0].before("<th>Eiles nr.</th>"));
 }
