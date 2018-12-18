@@ -33,6 +33,7 @@ function myGetFunction() {
     crossDomain: true,
     success: function(response) {
       responseData = JSON.parse(response);
+      console.log(responseData);
       setEmptyTable();
       $(".table tr + tr").remove();
       responseData.forEach(element => {
@@ -111,6 +112,4 @@ function addNumeration() {
       row.cells[0].before(number);
     }
   }
-
-  //   console.log(table.rows[0].cells[0].before("<th>Eiles nr.</th>"));
 }

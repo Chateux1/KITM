@@ -1,1 +1,6 @@
 .DS_Store
+maven/
+node_modules/
+package-lock.json
+package.json
+scss/
